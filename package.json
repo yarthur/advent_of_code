@@ -1,0 +1,30 @@
+{
+  "name": "advent-of-code",
+  "version": "1.0.0",
+  "description": "> My solutions for the 2017 Advent of Code excercises.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yarthur/advent_of_code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yarthur/advent_of_code/issues"
+  },
+  "homepage": "https://github.com/yarthur/advent_of_code#readme",
+  "devDependencies": {
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "dependencies": {
+    "eslint": "^4.13.0"
+  }
+}
