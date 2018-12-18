@@ -1,0 +1,349 @@
+Part 1: LAPFCRGHVZOTKWENBXIMSUDJQY
+***
+0
+[ { key: 'L', dependencies: [], duration: 72, toc: 72, lastTOC: 0 },
+  { key: 'R', dependencies: [], duration: 78, toc: 78, lastTOC: 0 },
+  { key: 'V', dependencies: [], duration: 82, toc: 82, lastTOC: 0 } ]
+***
+72
+[ { key: 'R', dependencies: [], duration: 78, toc: 78, lastTOC: 0 },
+  { key: 'V', dependencies: [], duration: 82, toc: 82, lastTOC: 0 } ]
+***
+72
+[ { key: 'R', dependencies: [], duration: 78, toc: 78, lastTOC: 0 },
+  { key: 'V', dependencies: [], duration: 82, toc: 82, lastTOC: 0 },
+  { key: 'A', dependencies: [], duration: 61, toc: 133, lastTOC: 72 },
+  { key: 'P', dependencies: [], duration: 76, toc: 148, lastTOC: 72 } ]
+***
+78
+[ { key: 'V', dependencies: [], duration: 82, toc: 82, lastTOC: 0 },
+  { key: 'A', dependencies: [], duration: 61, toc: 133, lastTOC: 72 },
+  { key: 'P', dependencies: [], duration: 76, toc: 148, lastTOC: 72 } ]
+***
+78
+[ { key: 'V', dependencies: [], duration: 82, toc: 82, lastTOC: 0 },
+  { key: 'A', dependencies: [], duration: 61, toc: 133, lastTOC: 72 },
+  { key: 'G', dependencies: [], duration: 67, toc: 145, lastTOC: 78 },
+  { key: 'P', dependencies: [], duration: 76, toc: 148, lastTOC: 72 },
+  { key: 'Z', dependencies: [], duration: 86, toc: 164, lastTOC: 78 } ]
+***
+82
+[ { key: 'A', dependencies: [], duration: 61, toc: 133, lastTOC: 72 },
+  { key: 'G', dependencies: [], duration: 67, toc: 145, lastTOC: 78 },
+  { key: 'P', dependencies: [], duration: 76, toc: 148, lastTOC: 72 },
+  { key: 'Z', dependencies: [], duration: 86, toc: 164, lastTOC: 78 } ]
+***
+133
+[ { key: 'G', dependencies: [], duration: 67, toc: 145, lastTOC: 78 },
+  { key: 'P', dependencies: [], duration: 76, toc: 148, lastTOC: 72 },
+  { key: 'Z', dependencies: [], duration: 86, toc: 164, lastTOC: 78 } ]
+***
+145
+[ { key: 'P', dependencies: [], duration: 76, toc: 148, lastTOC: 72 },
+  { key: 'Z', dependencies: [], duration: 86, toc: 164, lastTOC: 78 } ]
+***
+145
+[ { key: 'P', dependencies: [], duration: 76, toc: 148, lastTOC: 72 },
+  { key: 'Z', dependencies: [], duration: 86, toc: 164, lastTOC: 78 },
+  { key: 'H',
+    dependencies: [],
+    duration: 68,
+    toc: 213,
+    lastTOC: 145 } ]
+***
+148
+[ { key: 'Z', dependencies: [], duration: 86, toc: 164, lastTOC: 78 },
+  { key: 'H',
+    dependencies: [],
+    duration: 68,
+    toc: 213,
+    lastTOC: 145 } ]
+***
+148
+[ { key: 'Z', dependencies: [], duration: 86, toc: 164, lastTOC: 78 },
+  { key: 'H',
+    dependencies: [],
+    duration: 68,
+    toc: 213,
+    lastTOC: 145 },
+  { key: 'F',
+    dependencies: [],
+    duration: 66,
+    toc: 214,
+    lastTOC: 148 } ]
+***
+164
+[ { key: 'H',
+    dependencies: [],
+    duration: 68,
+    toc: 213,
+    lastTOC: 145 },
+  { key: 'F',
+    dependencies: [],
+    duration: 66,
+    toc: 214,
+    lastTOC: 148 } ]
+***
+164
+[ { key: 'H',
+    dependencies: [],
+    duration: 68,
+    toc: 213,
+    lastTOC: 145 },
+  { key: 'F',
+    dependencies: [],
+    duration: 66,
+    toc: 214,
+    lastTOC: 148 },
+  { key: 'O',
+    dependencies: [],
+    duration: 75,
+    toc: 239,
+    lastTOC: 164 },
+  { key: 'T',
+    dependencies: [],
+    duration: 80,
+    toc: 244,
+    lastTOC: 164 } ]
+***
+213
+[ { key: 'F',
+    dependencies: [],
+    duration: 66,
+    toc: 214,
+    lastTOC: 148 },
+  { key: 'O',
+    dependencies: [],
+    duration: 75,
+    toc: 239,
+    lastTOC: 164 },
+  { key: 'T',
+    dependencies: [],
+    duration: 80,
+    toc: 244,
+    lastTOC: 164 } ]
+***
+214
+[ { key: 'O',
+    dependencies: [],
+    duration: 75,
+    toc: 239,
+    lastTOC: 164 },
+  { key: 'T',
+    dependencies: [],
+    duration: 80,
+    toc: 244,
+    lastTOC: 164 } ]
+***
+214
+[ { key: 'O',
+    dependencies: [],
+    duration: 75,
+    toc: 239,
+    lastTOC: 164 },
+  { key: 'T',
+    dependencies: [],
+    duration: 80,
+    toc: 244,
+    lastTOC: 164 },
+  { key: 'C',
+    dependencies: [],
+    duration: 63,
+    toc: 277,
+    lastTOC: 214 } ]
+***
+239
+[ { key: 'T',
+    dependencies: [],
+    duration: 80,
+    toc: 244,
+    lastTOC: 164 },
+  { key: 'C',
+    dependencies: [],
+    duration: 63,
+    toc: 277,
+    lastTOC: 214 } ]
+***
+244
+[ { key: 'C',
+    dependencies: [],
+    duration: 63,
+    toc: 277,
+    lastTOC: 214 } ]
+***
+244
+[ { key: 'C',
+    dependencies: [],
+    duration: 63,
+    toc: 277,
+    lastTOC: 214 },
+  { key: 'K',
+    dependencies: [],
+    duration: 71,
+    toc: 315,
+    lastTOC: 244 } ]
+***
+277
+[ { key: 'K',
+    dependencies: [],
+    duration: 71,
+    toc: 315,
+    lastTOC: 244 } ]
+***
+315
+[]
+***
+315
+[ { key: 'W',
+    dependencies: [],
+    duration: 83,
+    toc: 398,
+    lastTOC: 315 } ]
+***
+398
+[]
+***
+398
+[ { key: 'E',
+    dependencies: [],
+    duration: 65,
+    toc: 463,
+    lastTOC: 398 },
+  { key: 'N',
+    dependencies: [],
+    duration: 74,
+    toc: 472,
+    lastTOC: 398 } ]
+***
+463
+[ { key: 'N',
+    dependencies: [],
+    duration: 74,
+    toc: 472,
+    lastTOC: 398 } ]
+***
+472
+[]
+***
+472
+[ { key: 'B',
+    dependencies: [],
+    duration: 62,
+    toc: 534,
+    lastTOC: 472 },
+  { key: 'X',
+    dependencies: [],
+    duration: 84,
+    toc: 556,
+    lastTOC: 472 } ]
+***
+534
+[ { key: 'X',
+    dependencies: [],
+    duration: 84,
+    toc: 556,
+    lastTOC: 472 } ]
+***
+556
+[]
+***
+556
+[ { key: 'I',
+    dependencies: [],
+    duration: 69,
+    toc: 625,
+    lastTOC: 556 },
+  { key: 'M',
+    dependencies: [],
+    duration: 73,
+    toc: 629,
+    lastTOC: 556 },
+  { key: 'S',
+    dependencies: [],
+    duration: 79,
+    toc: 635,
+    lastTOC: 556 } ]
+***
+625
+[ { key: 'M',
+    dependencies: [],
+    duration: 73,
+    toc: 629,
+    lastTOC: 556 },
+  { key: 'S',
+    dependencies: [],
+    duration: 79,
+    toc: 635,
+    lastTOC: 556 } ]
+***
+629
+[ { key: 'S',
+    dependencies: [],
+    duration: 79,
+    toc: 635,
+    lastTOC: 556 } ]
+***
+629
+[ { key: 'S',
+    dependencies: [],
+    duration: 79,
+    toc: 635,
+    lastTOC: 556 },
+  { key: 'U',
+    dependencies: [],
+    duration: 81,
+    toc: 710,
+    lastTOC: 629 } ]
+***
+635
+[ { key: 'U',
+    dependencies: [],
+    duration: 81,
+    toc: 710,
+    lastTOC: 629 } ]
+***
+710
+[]
+***
+710
+[ { key: 'D',
+    dependencies: [],
+    duration: 64,
+    toc: 774,
+    lastTOC: 710 } ]
+***
+774
+[]
+***
+774
+[ { key: 'J',
+    dependencies: [],
+    duration: 70,
+    toc: 844,
+    lastTOC: 774 },
+  { key: 'Q',
+    dependencies: [],
+    duration: 77,
+    toc: 851,
+    lastTOC: 774 } ]
+***
+844
+[ { key: 'Q',
+    dependencies: [],
+    duration: 77,
+    toc: 851,
+    lastTOC: 774 } ]
+***
+851
+[]
+***
+851
+[ { key: 'Y',
+    dependencies: [],
+    duration: 85,
+    toc: 936,
+    lastTOC: 851 } ]
+***
+936
+[]
+Part 2: 936
