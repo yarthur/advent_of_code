@@ -2,6 +2,7 @@
   "name": "advent-of-code",
   "version": "1.0.0",
   "description": "> My solutions for the 2017 Advent of Code excercises.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -11,18 +12,21 @@
     "url": "git+https://github.com/yarthur/advent_of_code.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "John Arthur <john@jtarthur.net>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yarthur/advent_of_code/issues"
   },
   "homepage": "https://github.com/yarthur/advent_of_code#readme",
+  "dependencies": {
+    "querystring": "^0.2.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.0",
     "@babel/plugin-transform-modules-commonjs": "^7.2.0",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
-    "jest": "^23.6.0"
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
   },
   "babel": {
     "plugins": [
