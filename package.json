@@ -1,36 +1,81 @@
 {
-  "name": "advent-of-code",
-  "version": "1.0.0",
-  "description": "> My solutions for the 2017 Advent of Code excercises.",
-  "type": "module",
-  "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yarthur/advent_of_code.git"
-  },
-  "keywords": [],
-  "author": "John Arthur <john@jtarthur.net>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yarthur/advent_of_code/issues"
-  },
-  "homepage": "https://github.com/yarthur/advent_of_code#readme",
-  "dependencies": {
-    "querystring": "^0.2.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.2.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
-    "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^26.6.3",
-    "jest": "^26.6.3"
-  },
-  "babel": {
-    "plugins": [
-      "@babel/plugin-transform-modules-commonjs"
-    ]
-  }
+    "name": "advent-of-code",
+    "version": "1.0.0",
+    "description": "> My solutions for the 2017 Advent of Code excercises.",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint --ext .js --ignore-path .gitignore .",
+        "lint:fix": "npm run lint -- --fix",
+        "postinstall": "husky install",
+        "test": "jest",
+        "test:watch": "npm test -- --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/yarthur/advent_of_code.git"
+    },
+    "keywords": [],
+    "author": "John Arthur <john@jtarthur.net>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/yarthur/advent_of_code/issues"
+    },
+    "homepage": "https://github.com/yarthur/advent_of_code#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "@babel/core": "^7.2.0",
+        "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-jest": "^26.6.3",
+        "eslint": "^7.14.0",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-plugin-jest": "^24.1.3",
+        "eslint-plugin-prettier": "^3.2.0",
+        "husky": "^5.0.4",
+        "jest": "^26.6.3",
+        "lint-staged": "^10.5.3",
+        "prettier": "^2.2.1"
+    },
+    "babel": {
+        "plugins": [
+            "@babel/plugin-transform-modules-commonjs"
+        ]
+    },
+    "eslintConfig": {
+        "extends": [
+            "eslint:recommended",
+            "plugin:prettier/recommended"
+        ],
+        "env": {
+            "es2020": true,
+            "node": true
+        },
+        "parserOptions": {
+            "sourceType": "module"
+        },
+        "reportUnusedDisableDirectives": true,
+        "rules": {
+            "no-console": 0
+        },
+        "overrides": [
+            {
+                "files": [
+                    "**/*.test.js"
+                ],
+                "extends": [
+                    "eslint:recommended",
+                    "plugin:jest/recommended",
+                    "plugin:prettier/recommended"
+                ]
+            }
+        ]
+    },
+    "lint-staged": {
+        "*.js": "eslint --fix",
+        "*.{json, md}": "prettier --write"
+    },
+    "prettier": {
+        "proseWrap": "always"
+    }
 }

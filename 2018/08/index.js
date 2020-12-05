@@ -1,3 +1,5 @@
-import getInputs from '../lib/getInputs.js';
+import getInputs from "../lib/getInputs.js";
 
-const inputs = getInputs('08');
+const inputs = getInputs("08");
+
+console.log(inputs);

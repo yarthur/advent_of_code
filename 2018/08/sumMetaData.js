@@ -1,15 +1,13 @@
 var parseNodes = function (inputs, nodes = []) {
-	let childCount = inputs.shift(),
-		metaDataCount = inputs.shift(),
-		children = [];
+    let childCount = inputs.shift();
 
-	for (let cv1 = 0; cv1 < childCount; cv1 += 1) {
-		[inputs, nodes, children] = parseNodes(inputs, nodes);
-	}
-	
-	
+    for (let cv1 = 0; cv1 < childCount; cv1 += 1) {
+        [inputs, nodes] = parseNodes(inputs, nodes);
+    }
 };
 
 export default function (inputs) {
-	nodes = parseNodes(inputs.slice(' '));
+    const nodes = parseNodes(inputs.slice(" "));
+
+    return nodes;
 }

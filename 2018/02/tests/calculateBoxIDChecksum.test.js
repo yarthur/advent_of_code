@@ -1,4 +1,4 @@
-import calculateBoxIDChecksum from '../../lib/calculateBoxIDChecksum';
+import calculateBoxIDChecksum from "../../lib/calculateBoxIDChecksum";
 
 const input = `abcdef
 bababc

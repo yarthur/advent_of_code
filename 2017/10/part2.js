@@ -1,6 +1,6 @@
-import input from './input.js';
+import input from "./input.js";
 
 var part2 = function () {
-	return input;
-}
+    return input;
+};
 export default part2;

@@ -1,6 +1,6 @@
-import { inputs, steps } from './sampleData';
-import parseSteps from '../parseSteps';
+import { inputs, steps } from "./sampleData";
+import parseSteps from "../parseSteps";
 
-test('', function () {
-	expect(parseSteps(inputs)).toEqual(steps);
+test("parses steps correctly", function () {
+    expect(parseSteps(inputs)).toEqual(steps);
 });

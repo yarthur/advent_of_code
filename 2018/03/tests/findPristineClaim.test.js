@@ -1,5 +1,5 @@
-import calculateOverlap from '../calculateOverlap';
-import findPristineClaim from '../findPristineClaim';
+import calculateOverlap from "../calculateOverlap";
+import findPristineClaim from "../findPristineClaim";
 
 const inputs = `#1 @ 1,3: 4x4
 #2 @ 2,1: 4x4

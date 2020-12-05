@@ -7,18 +7,14 @@ Step D must be finished before step E can begin.
 Step F must be finished before step E can begin.`;
 
 const steps = [
-	{ "key": "A", "dependencies": ["C"] },
-	{ "key": "B", "dependencies": ["A"] },
-	{ "key": "C", "dependencies": [] },
-	{ "key": "D", "dependencies": ["A"] },
-	{ "key": "E", "dependencies": ["B", "D", "F"] },
-	{ "key": "F", "dependencies": ["C"] }
+    { key: "A", dependencies: ["C"] },
+    { key: "B", dependencies: ["A"] },
+    { key: "C", dependencies: [] },
+    { key: "D", dependencies: ["A"] },
+    { key: "E", dependencies: ["B", "D", "F"] },
+    { key: "F", dependencies: ["C"] },
 ];
 
-const stepOrder = 'CABDFE';
+const stepOrder = "CABDFE";
 
-export {
-	inputs,
-	steps,
-	stepOrder
-};
+export { inputs, steps, stepOrder };

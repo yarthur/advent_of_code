@@ -1,4 +1,4 @@
-import compareIds from '../../lib/compareIds';
+import compareIds from "../../lib/compareIds";
 
 const inputs = `abcde
 fghij
@@ -8,4 +8,4 @@ fguij
 axcye
 wvxyz`;
 
-console.log(compareIds(inputs) === 'fgij');
+console.log(compareIds(inputs) === "fgij");

@@ -1,8 +1,8 @@
-import getInputs from '../lib/getInputs.js';
-import findFrequency from './findFrequency.js';
-import findRepeatFrequency from './findRepeatFrequency.js';
+import getInputs from "../lib/getInputs.js";
+import findFrequency from "./findFrequency.js";
+import findRepeatFrequency from "./findRepeatFrequency.js";
 
-var inputs = getInputs('01');
+var inputs = getInputs("01");
 
 console.log("Part 1: ", findFrequency(inputs));
 

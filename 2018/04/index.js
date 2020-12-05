@@ -1,10 +1,10 @@
-import getInputs from '../lib/getInputs.js';
-import parseRecords from './parseRecords.js';
-import calculateSleep from './calculateSleep.js';
-import calculateSleepiestTime from './calculateSleepiestTime.js';
-import findSleepiest from './findSleepiest.js';
+import getInputs from "../lib/getInputs.js";
+import parseRecords from "./parseRecords.js";
+import calculateSleep from "./calculateSleep.js";
+import calculateSleepiestTime from "./calculateSleepiestTime.js";
+import findSleepiest from "./findSleepiest.js";
 
-const inputs = getInputs('04');
+const inputs = getInputs("04");
 // const inputs = `[1518-11-01 00:00] Guard #10 begins shift
 // [1518-11-01 00:05] falls asleep
 // [1518-11-01 00:25] wakes up
@@ -28,13 +28,16 @@ var sleepLog = calculateSleep(records);
 var sleepAnalysis = calculateSleepiestTime(sleepLog);
 var sleepiest = findSleepiest(sleepLog);
 
-var mostPredictable = Object.entries(sleepAnalysis).reduce(function (defender, contender) {
-	if (contender[1].count > defender[1].count) {
-		return contender;
-	}
+var mostPredictable = Object.entries(sleepAnalysis).reduce(function (
+    defender,
+    contender
+) {
+    if (contender[1].count > defender[1].count) {
+        return contender;
+    }
 
-	return defender;
+    return defender;
 });
 
 console.log(`Part 1: ${sleepiest * sleepAnalysis[sleepiest].minute}`);
-console.log(`Part 2: ${mostPredictable[0] * mostPredictable[1].minute}`)
+console.log(`Part 2: ${mostPredictable[0] * mostPredictable[1].minute}`);

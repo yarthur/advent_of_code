@@ -1,7 +1,7 @@
 var calculateCheckSum = function (data) {
-	return data.reduce(function (total, addend) {
-		return total + addend;
-	});
+    return data.reduce(function (total, addend) {
+        return total + addend;
+    });
 };
 
-export default calculateCheckSum
+export default calculateCheckSum;

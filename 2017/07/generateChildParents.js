@@ -1,14 +1,13 @@
 var generateChildParents = function (towers) {
-	var childParents = {},
-		ultimateParent = [];
+    var childParents = {};
 
-	Object.entries(towers).forEach(function (tower) {
-		tower[1].children.forEach(function (child) {
-			childParents[child] = tower[0];
-		});
-	});
+    Object.entries(towers).forEach(function (tower) {
+        tower[1].children.forEach(function (child) {
+            childParents[child] = tower[0];
+        });
+    });
 
-	return childParents;
-}
+    return childParents;
+};
 
 export default generateChildParents;

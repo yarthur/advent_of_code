@@ -1,9 +1,9 @@
 var generateKnotLengths = function (lengthsString) {
-	var skipSizes = lengthsString.split(',');
+    var skipSizes = lengthsString.split(",");
 
-	return skipSizes.map(function (size) {
-		return Number(size)
-	});
+    return skipSizes.map(function (size) {
+        return Number(size);
+    });
 };
 
 export default generateKnotLengths;

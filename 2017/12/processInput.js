@@ -1,14 +1,14 @@
 var processInput = function (input) {
-	var programsArray = input.split('\n'),
-		programs = programsArray.reduce(function (progObj, program) {
-			var programParts = program.split(' <-> ');
+    var programsArray = input.split("\n"),
+        programs = programsArray.reduce(function (progObj, program) {
+            var programParts = program.split(" <-> ");
 
-			progObj[programParts[0]] = programParts[1].split(', ');
+            progObj[programParts[0]] = programParts[1].split(", ");
 
-			return progObj;
-		}, {});
+            return progObj;
+        }, {});
 
-	return programs;
+    return programs;
 };
 
 export default processInput;

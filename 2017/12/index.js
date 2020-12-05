@@ -1,6 +1,6 @@
-import input from './input.js';
-import processInput from './processInput.js';
-import groupPrograms from './groupPrograms.js';
+import input from "./input.js";
+import processInput from "./processInput.js";
+import groupPrograms from "./groupPrograms.js";
 
 // var input = `0 <-> 2
 // 1 <-> 1
@@ -11,22 +11,22 @@ import groupPrograms from './groupPrograms.js';
 // 6 <-> 4, 5`;
 
 var programs = processInput(input),
-	programGroups = [],
-	progSeed = [...programs['0'], '0']; // Seed the prog0 set with the contents *and key* of program 0.
+    programGroups = [],
+    progSeed = [...programs["0"], "0"]; // Seed the prog0 set with the contents *and key* of program 0.
 
 while (Object.keys(programs).length > 0) {
-	let group = groupPrograms(programs, progSeed);
+    let group = groupPrograms(programs, progSeed);
 
-	group.forEach(function (key) {
-		delete programs[key];
-	});
+    group.forEach(function (key) {
+        delete programs[key];
+    });
 
-	programGroups.push(group);
+    programGroups.push(group);
 
-	if (Object.keys(programs).length > 0) {
-		let newSeed = Object.keys(programs)[0];
-			progSeed = [...programs[newSeed], newSeed];
-	}
+    if (Object.keys(programs).length > 0) {
+        let newSeed = Object.keys(programs)[0];
+        progSeed = [...programs[newSeed], newSeed];
+    }
 }
 
 console.log(`Part 1: ${programGroups[0].size}`);

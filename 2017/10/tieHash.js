@@ -1,45 +1,57 @@
 var findPosition = function (currentPosition, skipDistance, stringLength) {
-	currentPosition += skipDistance;
+    currentPosition += skipDistance;
 
-	if (currentPosition >= stringLength) {
-		currentPosition -= stringLength;
-	}
+    if (currentPosition >= stringLength) {
+        currentPosition -= stringLength;
+    }
 
-	return currentPosition;
-}
+    return currentPosition;
+};
 
 var tieKnot = function (string, knotStart, knotLength, stringLength) {
-	var knot = new Array(knotLength);
+    var knot = new Array(knotLength);
 
-	for (let knotPosition = 0; knotPosition < knotLength; knotPosition += 1) {
-		let stringPosition = findPosition(knotStart, knotPosition, stringLength);
+    for (let knotPosition = 0; knotPosition < knotLength; knotPosition += 1) {
+        let stringPosition = findPosition(
+            knotStart,
+            knotPosition,
+            stringLength
+        );
 
-		knot[knotPosition] = string[stringPosition];
-	}
+        knot[knotPosition] = string[stringPosition];
+    }
 
-	knot.reverse();
+    knot.reverse();
 
-	knot.map(function (value, knotPosition) {
-		var stringPosition = findPosition(knotStart, knotPosition, stringLength);
+    knot.map(function (value, knotPosition) {
+        var stringPosition = findPosition(
+            knotStart,
+            knotPosition,
+            stringLength
+        );
 
-		string[stringPosition] = value;
-	});
+        string[stringPosition] = value;
+    });
 
-	return string;
-}
+    return string;
+};
 
 var tieHash = function (hash, knotLengths, currentPosition) {
-	var hashLength = hash.length;
+    var hashLength = hash.length;
 
-	knotLengths.forEach(function (knotLength, skipSize) {
-		var skipDistance = knotLength + skipSize;
+    knotLengths.forEach(function (knotLength, skipSize) {
+        var skipDistance = knotLength + skipSize;
 
-		hash = tieKnot(hash, currentPosition, knotLength, hashLength);
+        hash = tieKnot(hash, currentPosition, knotLength, hashLength);
 
-		currentPosition = findPosition(currentPosition, skipDistance, hashLength);
-	});
+        currentPosition = findPosition(
+            currentPosition,
+            skipDistance,
+            hashLength
+        );
+    });
 
-	return hash;
-}
+    return hash;
+};
 
 export default tieHash;

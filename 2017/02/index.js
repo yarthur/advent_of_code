@@ -1,7 +1,7 @@
-import spreadsheet from './spreadsheet.js';
-import processTabSeparatedValues from './processTSV.js';
-import part1 from './part1.js';
-import part2 from './part2.js';
+import spreadsheet from "./spreadsheet.js";
+import processTabSeparatedValues from "./processTSV.js";
+import part1 from "./part1.js";
+import part2 from "./part2.js";
 
 var data = processTabSeparatedValues(spreadsheet);
 

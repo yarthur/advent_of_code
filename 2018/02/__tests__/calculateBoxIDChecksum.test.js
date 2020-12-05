@@ -1,4 +1,4 @@
-import calculateBoxIDChecksum from '../calculateBoxIDChecksum';
+import calculateBoxIDChecksum from "../calculateBoxIDChecksum";
 
 const input = `abcdef
 bababc
@@ -8,6 +8,6 @@ aabcdd
 abcdee
 ababab`;
 
-test('calculates the box id checksums', function () {
-	expect(calculateBoxIDChecksum(input)).toBe(12);
+test("calculates the box id checksums", function () {
+    expect(calculateBoxIDChecksum(input)).toBe(12);
 });

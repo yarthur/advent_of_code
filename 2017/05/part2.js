@@ -1,5 +1,5 @@
-import input from './input.js';
-import processInput from './processInput.js';
+import input from "./input.js";
+import processInput from "./processInput.js";
 
 // const input = `0
 // 3
@@ -7,26 +7,26 @@ import processInput from './processInput.js';
 // 1
 // -3`;
 
-var part1 = function jumpOut () {
-	var currentPosition = 0,
-		offsets = processInput(input),
-		exit = offsets.length,
-		jumpCount = 0;
-	
-	while (currentPosition < exit) {
-		let jump = offsets[currentPosition],
-			offsetModifier = 1;
-		jumpCount += 1;
+var part1 = function jumpOut() {
+    var currentPosition = 0,
+        offsets = processInput(input),
+        exit = offsets.length,
+        jumpCount = 0;
 
-		if (jump >= 3) {
-			offsetModifier = -1;
-		}
+    while (currentPosition < exit) {
+        let jump = offsets[currentPosition],
+            offsetModifier = 1;
+        jumpCount += 1;
 
-		offsets[currentPosition] += offsetModifier;
-		currentPosition += jump;
-	}
+        if (jump >= 3) {
+            offsetModifier = -1;
+        }
 
-	return jumpCount;
-}
+        offsets[currentPosition] += offsetModifier;
+        currentPosition += jump;
+    }
+
+    return jumpCount;
+};
 
 export default part1;
